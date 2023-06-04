@@ -78,8 +78,9 @@ namespace Birth
             TimeSpan elapsedTime = now - dateTime;
 
             Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.WriteLine($"You were born {elapsedTime.Days} days ago");
+            Console.WriteLine($"You were born {elapsedTime.Days / 365} years, {elapsedTime.Days % 365 / 30} months,{elapsedTime.Days % 365 % 30} days ago");
             Console.ResetColor();
+            Console.WriteLine("hey");
         }
     }
 }
